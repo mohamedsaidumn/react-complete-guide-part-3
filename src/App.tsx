@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import styles from "./App.module.css";
 import Card from "./components/UI/Card";
 import NewUserInfo from "./components/UserInfo/NewUserInfo/NewUserInfo";
@@ -30,10 +30,10 @@ function App() {
     });
   };
   return (
-    <div>
+    <Fragment>
       <NewUserInfo onPostAddNewUserInfo={postAddNewUserInfoHandler} />
       <UsersInfoList usersInfo={usersInfo} />
-    </div>
+    </Fragment>
   );
 }
 

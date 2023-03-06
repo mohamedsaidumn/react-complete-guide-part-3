@@ -1,4 +1,4 @@
-import React, { useState, FormEvent, SyntheticEvent } from "react";
+import React, { useState, FormEvent, SyntheticEvent, Fragment } from "react";
 //import styles from "./NewUserInfo.module.css";
 import { UserInfoType } from "../../../types/types";
 import NewUserInfoForm from "./NewUserInfoForm";
@@ -89,7 +89,7 @@ const NewUserInfo = (props: propsType) => {
   };
 
   return (
-    <div>
+    <Fragment>
       {error.message !== "" && (
         <ErrorModal
           title={error.title}
@@ -104,7 +104,7 @@ const NewUserInfo = (props: propsType) => {
         onAgeStateChange={ageStateChangeHandler}
         onFormSubmit={preAddNewUserInfoHandler}
       />
-    </div>
+    </Fragment>
   );
 };
 

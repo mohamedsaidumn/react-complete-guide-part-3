@@ -1,4 +1,4 @@
-import React, { ReactNode, FormEvent, SyntheticEvent } from "react";
+import React, { FormEvent, SyntheticEvent } from "react";
 import styles from "./NewUserInfoForm.module.css";
 import Button from "../../UI/Button";
 import Card from "../../UI/Card";
